@@ -1,16 +1,10 @@
 {
   "files": {
-    "main.css": "/oneNote-organizer/static/css/main.073c9b0a.css",
-    "main.js": "/oneNote-organizer/static/js/main.f48dd69c.js",
-    "static/js/787.6c894f8a.chunk.js": "/oneNote-organizer/static/js/787.6c894f8a.chunk.js",
-    "static/media/logo.svg": "/oneNote-organizer/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/oneNote-organizer/index.html",
-    "main.073c9b0a.css.map": "/oneNote-organizer/static/css/main.073c9b0a.css.map",
-    "main.f48dd69c.js.map": "/oneNote-organizer/static/js/main.f48dd69c.js.map",
-    "787.6c894f8a.chunk.js.map": "/oneNote-organizer/static/js/787.6c894f8a.chunk.js.map"
+    "main.js": "/try-react/static/js/main.754884eb.js",
+    "index.html": "/try-react/index.html",
+    "main.754884eb.js.map": "/try-react/static/js/main.754884eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f48dd69c.js"
+    "static/js/main.754884eb.js"
   ]
 }
