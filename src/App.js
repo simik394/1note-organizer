@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Login } from '@microsoft/mgt-react';
+import {Welcome} from './logState';
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
         <p>
           edited lol
         </p>
-        
+        <div>
+          <Welcome/>
+        </div>
         <a
           className="App-link"
           href="https://reactjs.org"
