@@ -4,10 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Providers, LoginType} from '@microsoft/mgt-element';
-import {Msal2Provider, PromptType} from '@microsoft/mgt-msal2-provider';
+import {Msal2Provider} from '@microsoft/mgt-msal2-provider';
 
 Providers.globalProvider = new Msal2Provider({ clientId: 'c25f4378-030c-4502-897b-45f3ba069317', authority: "https://login.microsoftonline.com/2b51a4b3-443f-4406-8ca4-19056a79a444",
-redirectUri: "https://3000-simik394-onenoteorganiz-j5knvh6w7bi.ws-eu83.gitpod.io"})
+redirectUri: "https://3000-simik394-onenoteorganiz-j5knvh6w7bi.ws-eu83.gitpod.io", LoginType: "popup"})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

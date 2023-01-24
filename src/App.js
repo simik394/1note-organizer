@@ -10,7 +10,7 @@ function App() {
         <p>
           edited lol
         </p>
-        <Login />
+        
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -19,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+        <Login />
       </header>
     </div>
   );
