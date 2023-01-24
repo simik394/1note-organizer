@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Login } from '@microsoft/mgt-react';
 import {Welcome} from './logState';
+import { Wtfe769420 } from './graph';
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
           edited lol
         </p>
         <div>
-          <Welcome/>
+          <Welcome />
+        </div>
+        <div>
+          <Wtfe769420 />
         </div>
         <a
           className="App-link"
