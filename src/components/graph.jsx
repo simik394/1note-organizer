@@ -7,8 +7,8 @@ export function Wtfe769420() {
   const onenoteSection = {
     displayName: 'Section name'
   };
-  const usrDet = gClient.api('/me/onenote/notebooks/1-11b1f711-6f55-4109-b7dd-75b943df0eb7/sections').get();
-  console.log(usrDet)
+  gClient.api('/me/onenote/notebooks/1-11b1f711-6f55-4109-b7dd-75b943df0eb7/sections').get();
+  //console.log(usrDet)
     /* const [isSignedIn, setIsSignedIn] = useState(false);
   
     useEffect(() => {

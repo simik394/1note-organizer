@@ -29,8 +29,9 @@ export default logState; */
 export function Welcome() {
   return (
     <div>
+      <div>Providers.globalProvider.setState(2)</div>
       <div>{Providers.globalProvider.state}</div>
-      {ProviderState.Loading}
+      {ProviderState.SignedIn}
     </div>
 )
 
