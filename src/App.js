@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Login } from '@microsoft/mgt-react';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <p>
           edited lol
         </p>
+        <Login />
         <a
           className="App-link"
           href="https://reactjs.org"
