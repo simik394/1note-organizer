@@ -1,6 +1,6 @@
 import logo from './resources/logo.svg';
 import './style/App.css';
-import { Login } from '@microsoft/mgt-react';
+import Prep from './components/prep'
 import {Welcome} from './components/logState';
 import { Wtfe769420 } from './components/graph';
 
@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
           edited lol
         </p>
@@ -26,7 +27,7 @@ function App() {
         >
           Learn React
         </a>
-        <Login />
+        <Prep />
       </header>
     </div>
   );
