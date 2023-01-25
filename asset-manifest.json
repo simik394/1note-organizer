@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/oneNote-organizer/static/css/main.073c9b0a.css",
-    "main.js": "/oneNote-organizer/static/js/main.f70c0fd1.js",
+    "main.css": "/oneNote-organizer/static/css/main.6f89661d.css",
+    "main.js": "/oneNote-organizer/static/js/main.0fc275c7.js",
     "static/js/787.6c894f8a.chunk.js": "/oneNote-organizer/static/js/787.6c894f8a.chunk.js",
+    "static/media/blueprint-icons-20.eot?": "/oneNote-organizer/static/media/blueprint-icons-20.157fc7a37a71b9495da1.eot",
+    "static/media/blueprint-icons-20.ttf?": "/oneNote-organizer/static/media/blueprint-icons-20.8a525ab91769f6d60c94.ttf",
+    "static/media/blueprint-icons-16.eot?": "/oneNote-organizer/static/media/blueprint-icons-16.04fc31dc7c0257d5b3f3.eot",
+    "static/media/blueprint-icons-16.ttf?": "/oneNote-organizer/static/media/blueprint-icons-16.565ce5e4e7c8be823549.ttf",
+    "static/media/blueprint-icons-20.woff?": "/oneNote-organizer/static/media/blueprint-icons-20.3843580eab4844b48210.woff",
+    "static/media/blueprint-icons-16.woff?": "/oneNote-organizer/static/media/blueprint-icons-16.9ad9cbe47f2f5821528d.woff",
+    "static/media/blueprint-icons-20.woff2?": "/oneNote-organizer/static/media/blueprint-icons-20.8a26d7e1bb38c9c64a59.woff2",
+    "static/media/blueprint-icons-16.woff2?": "/oneNote-organizer/static/media/blueprint-icons-16.8b1c5e35bad17bae103e.woff2",
     "static/media/logo.svg": "/oneNote-organizer/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/oneNote-organizer/index.html",
-    "main.073c9b0a.css.map": "/oneNote-organizer/static/css/main.073c9b0a.css.map",
-    "main.f70c0fd1.js.map": "/oneNote-organizer/static/js/main.f70c0fd1.js.map",
+    "main.6f89661d.css.map": "/oneNote-organizer/static/css/main.6f89661d.css.map",
+    "main.0fc275c7.js.map": "/oneNote-organizer/static/js/main.0fc275c7.js.map",
     "787.6c894f8a.chunk.js.map": "/oneNote-organizer/static/js/787.6c894f8a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f70c0fd1.js"
+    "static/css/main.6f89661d.css",
+    "static/js/main.0fc275c7.js"
   ]
 }
