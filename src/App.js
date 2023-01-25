@@ -1,6 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './resources/logo.svg';
+import './style/App.css';
 import { Login } from '@microsoft/mgt-react';
+import {Welcome} from './components/logState';
+import { Wtfe769420 } from './components/graph';
 
 function App() {
   return (
@@ -10,7 +12,12 @@ function App() {
         <p>
           edited lol
         </p>
-        <Login />
+        <div>
+          <Welcome />
+        </div>
+        <div>
+        <Wtfe769420 />
+        </div>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -19,6 +26,7 @@ function App() {
         >
           Learn React
         </a>
+        <Login />
       </header>
     </div>
   );
