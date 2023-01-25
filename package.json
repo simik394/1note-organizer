@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://simik394.github.io/oneNote-organizer/",
   "dependencies": {
+    "@blueprintjs/core": "^4.15.0",
+    "@blueprintjs/select": "^4.8.17",
     "@microsoft/mgt": "^2.9.0",
     "@microsoft/mgt-react": "^2.9.0",
     "@testing-library/jest-dom": "^5.16.5",
