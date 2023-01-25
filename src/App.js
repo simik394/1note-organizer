@@ -3,31 +3,21 @@ import './style/App.css';
 import Prep from './components/prep'
 import {Welcome} from './components/logState';
 import { Wtfe769420 } from './components/graph';
+import gClient from './index'
+import NtbSelect from './components/ntbSelect';
+import SectionSelect from './components/sectionSelect';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-        <p>
-          edited lol
-        </p>
         <div>
-          <Welcome />
+          <Prep />
+          <NtbSelect />
         </div>
         <div>
-        <Wtfe769420 />
+          <SectionSelect />
         </div>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Prep />
       </header>
     </div>
   );
