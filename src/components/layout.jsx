@@ -1,5 +1,6 @@
 import * as React from "react";
 import TopBar from "./NavBar";
+import PagesView from './PagesView';
 
 
 function Layout() {
@@ -8,7 +9,7 @@ function Layout() {
                 <TopBar />
             </header>
             <body>
-                d
+                <div><PagesView /> </div>
             </body>
             </div>)
 }
