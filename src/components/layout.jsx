@@ -1,22 +1,16 @@
 import * as React from "react";
 import TopBar from "./NavBar";
 
-import {
-    Alignment,
-    Button,
-    Classes,
-    H5,
-    Navbar,
-    NavbarDivider,
-    NavbarGroup,
-    NavbarHeading,
-    Switch,
-} from "@blueprintjs/core";
 
-function Layout(){
+function Layout() {
     return (<div>
-        <TopBar />
-    </div> )
+            <header>
+                <TopBar />
+            </header>
+            <body>
+                d
+            </body>
+            </div>)
 }
 
 export default Layout;

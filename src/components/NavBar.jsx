@@ -4,19 +4,15 @@ import NtbSelect from "./ntbSelect";
 import SectionSelect from './sectionSelect'
 
 import {
-    Alignment,
     Button,
-    Classes,
     Navbar,
     NavbarDivider,
     NavbarGroup,
-    NavbarHeading,
-    Switch,
 } from "@blueprintjs/core";
 
 
 
-function TopBar(){
+function TopBar() {
     return (<div>
         <Navbar>
             <NavbarGroup>
@@ -27,7 +23,7 @@ function TopBar(){
                 <SectionSelect />
             </NavbarGroup>
         </Navbar>
-    </div> )
+    </div>)
 }
 
 export default TopBar;
