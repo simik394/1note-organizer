@@ -1,12 +1,35 @@
 
 import './style/App.css';
+import TopBar from "./components/navigace/NavBar";
 
-import {Providers, LoginType} from '@microsoft/mgt-element';
+import {Providers, LoginType, ProviderState} from '@microsoft/mgt-element';
 import {Msal2Provider} from '@microsoft/mgt-msal2-provider';
 
-import { useState, createContext, useContext } from "react";
+
+import React, { useState, useEffect } from 'react';
 
 import Layout from './layout';
+import { Button } from '@blueprintjs/core';
+
+function useIsSignedIn() {
+  const [isSignedIn, setIsSignedIn] = useState(false);
+
+  useEffect(() => {
+    const updateState = () => {
+      const provider = Providers.globalProvider;
+      setIsSignedIn(provider && provider.state === ProviderState.SignedIn);
+    };
+
+    Providers.onProviderUpdated(updateState);
+    updateState();
+
+    return () => {
+      Providers.removeProviderUpdatedListener(updateState);
+    }
+  }, []);
+
+  return [isSignedIn];
+}
 
 //const UserContext = createContext();
 
@@ -18,11 +41,14 @@ const provider = Providers.globalProvider;
 const gClient = provider.client;
 
 function App() {
+  const [isSignedIn] = useIsSignedIn();
   return (
     <div class="App">
-    <Layout />
+      <TopBar />
+    {isSignedIn && <Layout />}
+    <Button text=":)"/>
     </div>
-      
+    
     
   );
 }
