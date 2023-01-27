@@ -4,7 +4,7 @@ import * as React from "react";
 
 const BREADCRUMBS = [
     { href: "/users", icon: "folder-close", text: "Users" },
-    { href: "/users/janet", icon: "folder-close", text: "Janet" },
+    { href: "/users/tros01", icon: "folder-close", text: "Janet" },
     { icon: "document", text: "image.jpg" },
 ];
 

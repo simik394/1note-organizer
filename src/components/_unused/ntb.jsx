@@ -1,5 +1,5 @@
 import React from 'react'
-import { Providers, ProviderState } from '@microsoft/mgt'
+import { Providers, ProviderState } from '@microsoft/mgt-element'
 import { Button } from '@blueprintjs/core';
 
 
