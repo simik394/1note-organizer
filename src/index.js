@@ -10,7 +10,7 @@ import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 
 const logType = LoginType.Popup;
 Providers.globalProvider = new Msal2Provider({ clientId: 'c25f4378-030c-4502-897b-45f3ba069317', authority: "https://login.microsoftonline.com/2b51a4b3-443f-4406-8ca4-19056a79a444",
-redirectUri: "https://3000-simik394-onenoteorganiz-0hozfecbp5x.ws-eu84.gitpod.io/", loginType: logType})
+redirectUri: "https://3000-simik394-onenoteorganiz-792rr05qxhi.ws-eu84.gitpod.io", loginType: logType})
 /* const provider = Providers.globalProvider;
 export const gClient = provider.graph.client; */
 
