@@ -23,14 +23,14 @@ function Ntbks() {
      
     const ntb = [{
         "id":8,
-        "name":"Parul",
-        "city":"Chandigarh"
+        "name":"nn",
+        "city":"111"
     },
     
     {
         "id":9,
-        "name":"Himani",
-        "city":"Dehradun"
+        "name":"jj",
+        "city":"222"
     }];
 
     const DisplayData=ntb.map(
