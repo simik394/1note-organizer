@@ -11,8 +11,14 @@ function Ntbks() {
          const provider = Providers.globalProvider;
          const gClient = provider.graph.client;
          const JsonData = await gClient.api('/me/onenote/notebooks/').get()
-         .then((res) => res.value); //.then((res) => res.json()).then((data) => console.log(data) );
-         return (console.log(JsonData))
+         .then((res) => res.value);
+         console.log(JsonData);
+         JsonData.map((a) => console.log(a.displayName) );//.then((res) => res.json()).then((data) => console.log(data) );
+         const notebooks = JsonData.map(
+            (data) => <button  text={data.id}/>);
+        //const Notebooklist = <div>{notebooks}</div>
+        console.log(notebooks)
+         return (notebooks)
      }
      
     const ntb = [{
@@ -36,7 +42,8 @@ function Ntbks() {
             
         </tr>
     )});
-
+    
+    
     return(<div>{DisplayData}</div>);
 }
 

@@ -9,12 +9,11 @@ import Layout from './layout';
 
 
 
-function App() {
+function App(props) {
   return (
     <div class="App">
-    <Layout />
+    <Layout gcli={props.gCli}/>
     </div>
-    
       
     
   );

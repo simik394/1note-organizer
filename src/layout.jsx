@@ -7,9 +7,7 @@ import Ntbks from "./components/_unused/ntb";
 function Layout() {
     return (<div>
         <TopBar />
-        <body>
-            <div><PagesView /> </div>
-        </body>
+        <div><PagesView /> </div>
     </div>)
 }
 
