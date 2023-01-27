@@ -8,4 +8,4 @@ In the project directory, you can run:
 
 ### `npm run deploy`
 
-to deploy main branch to github pages on https://simik394.github.io/oneNote-organizer/
+to deploy main branch to github pages on https://simik394.github.io/1note-organizer/
