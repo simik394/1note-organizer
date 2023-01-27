@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/1note-organizer/static/css/main.99e66632.css",
-    "main.js": "/1note-organizer/static/js/main.5c794eda.js",
+    "main.js": "/1note-organizer/static/js/main.a3c6aa58.js",
     "static/js/787.6c894f8a.chunk.js": "/1note-organizer/static/js/787.6c894f8a.chunk.js",
     "static/media/blueprint-icons-20.eot?": "/1note-organizer/static/media/blueprint-icons-20.157fc7a37a71b9495da1.eot",
     "static/media/blueprint-icons-20.ttf?": "/1note-organizer/static/media/blueprint-icons-20.8a525ab91769f6d60c94.ttf",
@@ -13,11 +13,11 @@
     "static/media/blueprint-icons-16.woff2?": "/1note-organizer/static/media/blueprint-icons-16.8b1c5e35bad17bae103e.woff2",
     "index.html": "/1note-organizer/index.html",
     "main.99e66632.css.map": "/1note-organizer/static/css/main.99e66632.css.map",
-    "main.5c794eda.js.map": "/1note-organizer/static/js/main.5c794eda.js.map",
+    "main.a3c6aa58.js.map": "/1note-organizer/static/js/main.a3c6aa58.js.map",
     "787.6c894f8a.chunk.js.map": "/1note-organizer/static/js/787.6c894f8a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99e66632.css",
-    "static/js/main.5c794eda.js"
+    "static/js/main.a3c6aa58.js"
   ]
 }
