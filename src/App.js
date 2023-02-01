@@ -35,12 +35,14 @@ function useIsSignedIn() {
 
 const logType = LoginType.Popup;
 Providers.globalProvider = new Msal2Provider({ clientId: 'c25f4378-030c-4502-897b-45f3ba069317', authority: "https://login.microsoftonline.com/2b51a4b3-443f-4406-8ca4-19056a79a444",
-redirectUri: "https://3000-simik394-1noteorganizer-6nbbxea0my5.ws-eu84.gitpod.io/", loginType: logType})
+redirectUri: "http://localhost:3000", loginType: logType})
 
 const provider = Providers.globalProvider;
-const gClient = provider.client;
+console.log(provider);
+const gClient = provider.graph.client.api("/me").get();
+console.log(gClient);
 
-function App() {
+export default function App() {
   const [isSignedIn] = useIsSignedIn();
   return (
     <div class="App">
@@ -53,4 +55,4 @@ function App() {
   );
 }
 
-export default App;
+
