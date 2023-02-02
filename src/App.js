@@ -10,8 +10,6 @@ import { testMe } from './GS';
 
 //const UserContext = createContext();
 
-
-
 config();
 testMe();
 
@@ -23,9 +21,5 @@ export default function App() {
       {isSignedIn && <Layout />}
       {!isSignedIn && <Button text=":)" />}
     </div>
-
-
   );
 }
-
-

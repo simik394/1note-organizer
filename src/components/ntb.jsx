@@ -2,9 +2,6 @@ import { useEffect, useState } from 'react'
 import { Button } from '@blueprintjs/core';
 
 import {CallG} from '../GS'
-//import { Notebook, PageCollection } from 'microsoft-graph';
-
-
 
 
 export default function Ntbks(props) {
@@ -25,7 +22,4 @@ export default function Ntbks(props) {
 
     
 return (<Button onClick={CallG}>callG</Button>);
-
-
 }
-

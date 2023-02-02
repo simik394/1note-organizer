@@ -2,7 +2,7 @@ import { Providers, LoginType, ProviderState } from '@microsoft/mgt-element';
 import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
 
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 
 export function config() {
@@ -13,7 +13,7 @@ export function config() {
         redirectUri: "http://localhost:3000",
         loginType: logType
     });
-    
+
 }
 
 
