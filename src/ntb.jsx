@@ -8,12 +8,12 @@ import { useAppContext } from './Conext';
 
 export default function Ntbks(props) {
 
-    const cntx = useAppContext();
+    /* const cntx = useAppContext();
     const ejj = async () => {
         
         cntx.notebooks.map((i) => console.log(i.displayName));
     }
-    ejj();
+    ejj(); */
     
 return (<Button onClick={CallG}>callG</Button>);
 }
