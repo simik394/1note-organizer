@@ -40,7 +40,7 @@ export default function NtbSelect(notebooks) {
         id={ntbSelector}
         title="ntbSelector"
         value={selectedNtb}
-        onChange={e => cntx.setSelectedNtb(e.target.value)}>
+        onChange={e => setSelectedNtb(e.target.value)}>
         <option key="0" hidden={true}>Choose</option>
         {ntbs}
       </select>
