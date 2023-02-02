@@ -1,27 +1,25 @@
-import logo from './resources/logo.svg';
+import { Button } from '@blueprintjs/core';
+
 import './style/App.css';
 
-import { Welcome } from './components/logState';
-import { Wtfe769420 } from './components/graph';
-import gClient from './index'
-import Prep from './components/prep'
-import NtbSelect from './components/ntbSelect';
-import SectionSelect from './components/sectionSelect';
+import TopBar from "./components/navigace/NavBar";
+import Layout from './layout';
 
+import { useIsSignedIn, config } from './func';
+import { testMe } from './GS';
 
+//const UserContext = createContext();
 
-function App() {
+config();
+testMe();
+
+export default function App() {
+  const [isSignedIn] = useIsSignedIn();
   return (
     <div class="App">
-    <Prep />
-    <NtbSelect />
-        
-    <SectionSelect />
+      <TopBar />
+      {isSignedIn && <Layout />}
+      {!isSignedIn && <Button text=":)" />}
     </div>
-    
-      
-    
   );
 }
-
-export default App;
