@@ -1,15 +1,18 @@
 import { Providers } from '@microsoft/mgt'
 
+
+
+
 export async function CallG() {
     const provider = Providers.globalProvider;
-    console.log(provider);
+    //console.log(provider);
     const gClient = provider.graph.client;
-    console.log(gClient);
-
+    //console.log(gClient);
     const graphPath = '/me/onenote/notebooks/';
-    var response = await gClient.api(graphPath).get();
-    //var pagec = response.value;
-    console.log(response.value);
+    var response = await gClient
+        .api(graphPath)
+        .get();
+    //console.log(response.value);
     return (response.value);
 }
 

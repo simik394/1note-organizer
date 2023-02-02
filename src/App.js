@@ -8,10 +8,9 @@ import Layout from './layout';
 import { useIsSignedIn, config } from './func';
 import { testMe } from './GS';
 import ProvideAppContext from './Conext';
-//const UserContext = createContext();
 
 config();
-testMe();
+//testMe();
 
 export default function App() {
   const [isSignedIn] = useIsSignedIn();

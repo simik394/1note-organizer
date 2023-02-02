@@ -1,14 +1,14 @@
-import { 
-    createContext, 
-    useContext, 
-    useState, 
-    useEffect 
+import {
+    createContext,
+    useContext,
+    useState,
+    useEffect
 } from 'react';
 
 import { CallG } from './GS';
 
 const appContext = createContext({
-    ntbs: [],
+    ntbs: undefined,
     selectedNtb: undefined
 });
 
@@ -35,9 +35,8 @@ function useProvideAppContext() {
             } else { console.log("uz něco je"); console.log(notebooks) }
 
         };
-        //console.log("1 - "+notebooks);
+
         loadNotebooks();
-        //console.log("2 - "+notebooks);
     });
     const selectedNtb = undefined;
     return {
