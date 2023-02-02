@@ -76,7 +76,7 @@ function NtbL1(notebooks) {
     }
     //test();
     const list = async () => {
-      const li = await ntbks.map(n => <option key={n.id}>{n.displayName}</option>);
+      const li = await ntbks.map(n => <option key={n.id} name={n.displayName}>{n.displayName}</option>);
       setNtbs(li);
       console.log(li);
       console.log(ntbks);
