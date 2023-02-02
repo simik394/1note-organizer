@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useId } from "react";
 
 import Ntbks from "../ntb";
 
@@ -67,7 +67,8 @@ function NtbOpt1(dName) {
 
 function NtbL1(notebooks) {
   const [ntbs, setNtbs] = useState();
-
+  const [selectedNtb, setSelectedNtb] = useState();
+  const ntbSelector = useId();
   useEffect(() => {
     const ntbks = notebooks.notebooks;
 
@@ -76,7 +77,7 @@ function NtbL1(notebooks) {
     }
     //test();
     const list = async () => {
-      const li = await ntbks.map(n => <option key={n.id} name={n.displayName}>{n.displayName}</option>);
+      const li = await ntbks.map(n => <option key={n.id} value={n.displayName}>{n.displayName}</option>);
       setNtbs(li);
       console.log(li);
       console.log(ntbks);
@@ -90,5 +91,16 @@ function NtbL1(notebooks) {
 
 
 
-  return (<select>{ntbs}</select>)
+  return (
+    <lable htmlFor={ntbSelector}>
+      <select
+        id={ntbSelector}
+        title="ntbSelector"
+        value={selectedNtb}
+        onChange={e => setSelectedNtb(e.target.value)}>
+        <option key="0" hidden="true">Choose</option>
+        {ntbs}
+      </select>
+      <p>Your favorite fruit: {selectedNtb}</p>
+    </lable>)
 }
