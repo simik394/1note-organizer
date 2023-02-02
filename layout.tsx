@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import PagesView from './components/content/PagesView';
+import PagesView from './content/PagesView';
 
 
 

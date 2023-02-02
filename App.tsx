@@ -1,8 +1,8 @@
 import { Button } from '@blueprintjs/core';
-
-import './style/App.css';
-
-import TopBar from "./components/navigace/NavBar";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import TopBar from "./navigace/NavBar";
 import Layout from './layout';
 
 import { useIsSignedIn, config } from './func';
@@ -15,7 +15,7 @@ config();
 export default function App() {
   const [isSignedIn] = useIsSignedIn();
   return (
-    <div class="App">
+    <div className="App">
       <ProvideAppContext >
         <TopBar />
         {isSignedIn && <Layout />}
