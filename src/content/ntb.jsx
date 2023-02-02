@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Button } from '@blueprintjs/core';
 
-import {CallG} from './GS'
-import { useAppContext } from './Conext';
+import {CallG} from '../scripts/GS'
+import { useAppContext } from '../Conext';
 
 
 

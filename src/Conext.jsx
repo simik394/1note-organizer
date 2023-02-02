@@ -5,7 +5,7 @@ import {
     useEffect
 } from 'react';
 
-import { CallG } from './GS';
+import { CallG } from './scripts/GS';
 
 const appContext = createContext({
     ntbs: undefined,

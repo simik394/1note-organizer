@@ -1,12 +1,12 @@
 import { Button } from '@blueprintjs/core';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './resources/logo.svg';
+import './styles/App.css';
 import TopBar from "./navigace/NavBar";
 import Layout from './layout';
 
-import { useIsSignedIn, config } from './func';
-import { testMe } from './GS';
+import { useIsSignedIn, config } from './scripts/func';
+import { testMe } from './scripts/GS';
 import ProvideAppContext from './Conext';
 
 config();

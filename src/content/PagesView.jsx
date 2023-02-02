@@ -1,6 +1,6 @@
 import { useState, useEffect, useId } from "react";
 
-import Ntbks from "../ntb";
+import Ntbks from "./ntb";
 
 import { useAppContext } from '../Conext';
 
