@@ -1,6 +1,6 @@
 import { Login } from '@microsoft/mgt-react';
 import { Button, Navbar, NavbarDivider } from "@blueprintjs/core";
-import NtbSelect from './ntbSelect';
+import NtbSelect from './NtbSelect';
 
  function Prep(){
     const vari = 0;

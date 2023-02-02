@@ -1,7 +1,7 @@
 import * as React from "react";
-import Prep from './prep'
-import NtbSelect from "./ntbSelect";
-import SectionSelect from './sectionSelect'
+import Prep from './Login'
+import NtbSelect from "./NtbSelect";
+import SectionSelect from './SectionSelect'
 
 import {
     Button,
