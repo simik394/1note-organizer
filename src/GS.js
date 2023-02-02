@@ -20,3 +20,10 @@ export async function CallG() {
     console.log(response.value);
     return (response.value);
 }
+
+export async function testMe() {
+    const provider = Providers.globalProvider;
+    console.log(provider);
+    const gClient = provider.graph.client.api("/me").get();
+    console.log(gClient);
+}
