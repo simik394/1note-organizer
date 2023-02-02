@@ -6,7 +6,7 @@ import {CallG} from '../GS'
 
 export default function Ntbks(props) {
 
-    const [notebooks, setNotebooks] = useState();
+    /* const [notebooks, setNotebooks] = useState();
     useEffect(() => {
         const loadNotebooks = async () => {
             if (!notebooks) {
@@ -18,7 +18,7 @@ export default function Ntbks(props) {
         //console.log("1 - "+notebooks);
         loadNotebooks();
         //console.log("2 - "+notebooks);
-    });
+    }); */
 
     
 return (<Button onClick={CallG}>callG</Button>);
