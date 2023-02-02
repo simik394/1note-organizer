@@ -11,7 +11,7 @@ function PagesView() {
     <div>
       <p>pagesView</p>
       <Ntbks />
-      <NtbSelect notebooks={ntbs} />
+      
     </div>)
 }
 

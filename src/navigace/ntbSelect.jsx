@@ -7,7 +7,7 @@ export default function NtbSelect(notebooks) {
   const [selectedNtb, setSelectedNtb] = useState();
   const ntbSelector = useId();
   const ntbks = notebooks.notebooks;
-  
+  const cntx = useAppContext();
   useEffect(() => {
     const test = async () => {
       await ntbks.map(i => console.log(i.displayName))
@@ -40,7 +40,7 @@ export default function NtbSelect(notebooks) {
         id={ntbSelector}
         title="ntbSelector"
         value={selectedNtb}
-        onChange={e => setSelectedNtb(e.target.value)}>
+        onChange={e => cntx.setSelectedNtb(e.target.value)}>
         <option key="0" hidden={true}>Choose</option>
         {ntbs}
       </select>

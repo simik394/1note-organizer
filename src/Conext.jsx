@@ -28,19 +28,25 @@ export default function ProvideAppContext({ children }) {
 function useProvideAppContext() {
     const [notebooks, setNotebooks] = useState();
     useEffect(() => {
+        const graphPath = '/me/onenote/notebooks/';
         const loadNotebooks = async () => {
-            if (!notebooks) {
-                const ntbs = await CallG();
-                setNotebooks(ntbs);
+            
+            if (!notebooks) { 
+                const ntbs = await CallG(graphPath);
+                const ntbsval = ntbs.value;
+                setNotebooks(ntbsval);
             } else { console.log("uz něco je"); console.log(notebooks) }
 
         };
 
         loadNotebooks();
+        
+    
     });
-    const selectedNtb = undefined;
+    const [selectedNtb, setSelectedNtb] = useState();
     return {
         notebooks,
-        selectedNtb
+        selectedNtb,
+        setSelectedNtb
     };
 }

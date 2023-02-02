@@ -14,7 +14,8 @@ export default function Ntbks(props) {
         cntx.notebooks.map((i) => console.log(i.displayName));
     }
     ejj(); */
-    
-return (<Button onClick={CallG}>callG</Button>);
+    const graphPath = '/me/onenote/notebooks/1-5119d42c-94f1-4a90-b906-a553311a0afe/';
+    const cc = () => CallG(graphPath);
+return (<Button onClick={cc}>callG</Button>);
 }
 
