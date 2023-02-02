@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Button } from '@blueprintjs/core';
 
 import {CallG} from '../GS'
-
+import { useAppContext } from '../Conext';
 
 export default function Ntbks(props) {
 
@@ -20,6 +20,10 @@ export default function Ntbks(props) {
         //console.log("2 - "+notebooks);
     }); */
 
-    
+    const cntx = useAppContext();
+    console.log(cntx);
+    const ntbs = cntx.notebooks;
+    //console.log(ntbs);
+    //const ntb0 = ntbs[0];
 return (<Button onClick={CallG}>callG</Button>);
 }
