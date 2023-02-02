@@ -3,7 +3,7 @@ import { useState, useEffect, useId } from "react";
 import Ntbks from "./ntb";
 
 import { useAppContext } from '../Conext';
-import { NtbL1 } from '../navigace/NtbSelect'
+import  NtbSelect  from '../navigace/NtbSelect'
 function PagesView() {
   const cntx = useAppContext();
   const ntbs = cntx.notebooks;
@@ -11,7 +11,7 @@ function PagesView() {
     <div>
       <p>pagesView</p>
       <Ntbks />
-      <NtbL1 notebooks={ntbs} />
+      <NtbSelect notebooks={ntbs} />
     </div>)
 }
 

@@ -2,6 +2,7 @@ import * as React from "react";
 import Prep from './Login'
 import NtbSelect from "./NtbSelect";
 import SectionSelect from './SectionSelect'
+import { useAppContext } from '../Conext';
 
 import {
     Button,
@@ -13,12 +14,16 @@ import {
 
 
 function TopBar() {
+
+    const cntx = useAppContext();
+    const ntbs = cntx.notebooks;
+
     return (<div>
         <Navbar>
             <NavbarGroup>
                 <Prep />
                 <NavbarDivider />
-                <NtbSelect />
+                <NtbSelect notebooks={ntbs} />
                 <NavbarDivider />
                 <SectionSelect />
             </NavbarGroup>

@@ -1,14 +1,17 @@
-import * as React from "react";
+import { Button } from '@blueprintjs/core';
 
 import PagesView from './content/PagesView';
 import TopBar from "./navigace/NavBar";
+import { useIsSignedIn } from "./scripts/func";
 
 
 function Layout() {
+    const [isSignedIn] = useIsSignedIn();
     return (
         <>
             <TopBar />
-            <div><PagesView /> </div>
+            {isSignedIn && <div><PagesView /> </div>}
+            {!isSignedIn && <Button text=":)" />}
         </>)
 }
 

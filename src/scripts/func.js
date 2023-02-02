@@ -10,7 +10,7 @@ export function config() {
     Providers.globalProvider = new Msal2Provider({
         clientId: 'c25f4378-030c-4502-897b-45f3ba069317',
         authority: "https://login.microsoftonline.com/2b51a4b3-443f-4406-8ca4-19056a79a444",
-        redirectUri: "http://localhost:3000",
+        redirectUri: "https://win22h2-simik:3000",
         loginType: logType
     });
 
