@@ -9,6 +9,8 @@ import { CallG } from './scripts/GS';
 
 const appContext = createContext({
     ntbs: undefined,
+});
+const ntbContext = createContext({
     selectedNtb: undefined
 });
 
