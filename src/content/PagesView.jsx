@@ -13,9 +13,9 @@ function PagesView() {
   const sntb = cntx.selectedNtb.id;
   return (
     <div>
-      <SectionsList ntb={ntb}/>
+      
       <p>pagesView</p>
-      <PageList ntb={ntb}/>
+      
       <Ntbks />
     </div>)
 }
