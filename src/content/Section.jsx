@@ -13,8 +13,10 @@ export  default function SectionsList(ntb){
     const [sections, setSections ] = useState();
     
     useEffect(() => {
+    
       const getSections = async () => {
-        const graphPath = '/me/onenote/notebooks/'+ntb.ntb.id+'/sections';
+        const ntbId =  ntb.ntb.id;
+        const graphPath = '/me/onenote/notebooks/'+ntbId+'/sections';
         const secs = CallG(graphPath);
         return (secs);
       };
