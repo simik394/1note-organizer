@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useId } from 'react';
 
-import { CallG } from './scripts/GS';
+import { CallG } from '../scripts/GS';
 
 
-export  function Section(sectionData){
+/* export  function Section(sectionData){
     return (
         a
     )
-}
+} */
 
 export  default function SectionsList(ntb){
     const [sections, setSections ] = useState();

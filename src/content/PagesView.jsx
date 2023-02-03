@@ -5,7 +5,6 @@ import PageList from "./Page";
 import SectionsList from "./Section";
 import { useAppContext } from '../Conext';
 
-import  NtbSelect  from '../navigace/NtbSelect'
 
 
 function PagesView() {

@@ -1,7 +1,7 @@
 import * as React from "react";
 import Prep from './Login'
-import NtbSelect from "./NtbSelect";
-import SectionSelect from './SectionSelect'
+import NtbSelect from "./ntbSelect";
+import SectionSelect from './sectionSelect'
 import { useAppContext } from '../Conext';
 
 import {
