@@ -18,12 +18,12 @@ export  default function SectionsList(ntb){
         const secs = CallG(graphPath);
         return (secs);
       };
-      const ls = getSections;
+      const ls = getSections();
 
         const test = async () => {
           await ls.map(i => console.log(i.displayName))
         }
-        //test();
+        test();
         const listOut = async () => {
           const lis = await ls.map(n =>
             <li
