@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useId } from 'react';
-import { useAppContext } from '../Conext';
+import { useAppContext, useNtbContext } from '../Conext';
 import Ntbks from '../content/ntb';
 
 export default function NtbSelect(notebooks) {
@@ -8,6 +8,7 @@ export default function NtbSelect(notebooks) {
   const ntbSelector = useId();
   const ntbks = notebooks.notebooks;
   const cntx = useAppContext();
+  const nctx = useNtbContext();
   useEffect(() => {
     const test = async () => {
       await ntbks.map(i => console.log(i.displayName))
@@ -22,7 +23,7 @@ export default function NtbSelect(notebooks) {
           {n.displayName}
         </option>);
       setNtbs(li);
-      cntx.setSelectedNtb(li);
+      nctx.setSelectedNtb(li);
       //console.log(li);
       //console.log(ntbks);
     }

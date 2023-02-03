@@ -20,7 +20,7 @@ export function useAppContext() {
 export function useNtbContext() {
     return useContext(ntbContext);
 }
-export default function ProvideAppContext({ children }) {
+export function ProvideAppContext({ children }) {
     const cntx = useProvideAppContext();
     return (
         <appContext.Provider value={cntx}>
@@ -28,7 +28,7 @@ export default function ProvideAppContext({ children }) {
         </appContext.Provider>
     );
 }
-export default function ProvideNtbContext({ children }) {
+export  function ProvideNtbContext({ children }) {
     const sntb = useProvideNtbContext();
     return (
         <ntbContext.Provider value={sntb}>
