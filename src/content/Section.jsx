@@ -11,12 +11,14 @@ import { CallG } from '../scripts/GS';
 
 export  default function SectionsList(ntb){
     const [sections, setSections ] = useState();
-    const getSections = async () => {
-      const graphPath = '/me/onenote/notebooks/'+ntb.ntb.id+'/sections';
-      const secs = CallG(graphPath);
-    };
+    
     useEffect(() => {
-        
+      const getSections = async () => {
+        const graphPath = '/me/onenote/notebooks/'+ntb.ntb.id+'/sections';
+        const secs = CallG(graphPath);
+        return (secs);
+      };
+      const ls = getSections;
 
         const test = async () => {
           await ls.map(i => console.log(i.displayName))
