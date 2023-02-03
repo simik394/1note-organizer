@@ -13,11 +13,13 @@ export  default function SectionsList(ntb){
     const [sections, setSections ] = useState();
     
     useEffect(() => {
-    
+      const graphPath = '/me/onenote/notebooks/'+ntbId+'/sections';
+      CallG(graphPath);
+      console.log(ntb);
       const getSections = async () => {
-        const ntbId =  ntb.ntb.id;
+        const ntbId =  ntb.id;
         const graphPath = '/me/onenote/notebooks/'+ntbId+'/sections';
-        const secs = CallG(graphPath);
+        const secs = await CallG(graphPath);
         return (secs);
       };
       const ls = getSections();
@@ -25,7 +27,7 @@ export  default function SectionsList(ntb){
         const test = async () => {
           await ls.map(i => console.log(i.displayName))
         }
-        test();
+        //test();
         const listOut = async () => {
           const lis = await ls.map(n =>
             <li
@@ -41,7 +43,7 @@ export  default function SectionsList(ntb){
         }
         //console.log(notebooks.notebooks);
         listOut();
-        return () => {}
+
       }, [ntb]);
 
     return (

@@ -1,8 +1,8 @@
 import { useState, useEffect, useId } from "react";
 
 import Ntbks from "./ntb";
-import PageList from "./Page";
-import SectionsList from "./Section";
+//import PageList from "./Page";
+//import SectionsList from "./Section";
 import { useAppContext } from '../Conext';
 
 
@@ -10,10 +10,10 @@ import { useAppContext } from '../Conext';
 function PagesView() {
   const cntx = useAppContext();
   const ntb = cntx.selectedNtb;
-  const sntb = cntx.selectedNtb.id;
+  //const sntb = cntx.selectedNtb.id;
   return (
     <div>
-      <SectionsList ntb={ntb}/>
+      
       <p>pagesView</p>
       
       <Ntbks />
