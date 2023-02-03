@@ -16,19 +16,20 @@ export  default function SectionsList(ntb){
       
       console.log(ntb);
       const getSections = async () => {
-        const ntbId =  ntb.id;
+        const ntbId =  ntb.ntb.id;
         const graphPath = '/me/onenote/notebooks/'+ntbId+'/sections';
         const secs = await CallG(graphPath);
         return (secs);
       };
-      const ls = getSections();
-
+      const ls = async () => {await getSections();}
+      console.log(ls);
+        
         const test = async () => {
           await ls.map(i => console.log(i.displayName))
         }
         //test();
         const listOut = async () => {
-          const lis = await ls.map(n =>
+          const lis = await ls().map(n =>
             <li
               key={n.displayName}
               value={n.displayName}
