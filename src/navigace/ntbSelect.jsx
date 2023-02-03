@@ -22,6 +22,7 @@ export default function NtbSelect(notebooks) {
           {n.displayName}
         </option>);
       setNtbs(li);
+      cntx.setSelectedNtb(li);
       //console.log(li);
       //console.log(ntbks);
     }

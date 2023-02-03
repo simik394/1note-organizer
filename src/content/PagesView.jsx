@@ -1,17 +1,23 @@
 import { useState, useEffect, useId } from "react";
 
 import Ntbks from "./ntb";
-
+import PageList from "./Page";
+import SectionsList from "./Section";
 import { useAppContext } from '../Conext';
+
 import  NtbSelect  from '../navigace/NtbSelect'
+
+
 function PagesView() {
   const cntx = useAppContext();
-  const ntbs = cntx.notebooks;
+  const ntb = cntx.selectedNtb;
+  const sntb = cntx.selectedNtb.id;
   return (
     <div>
+      <SectionsList ntb={ntb}/>
       <p>pagesView</p>
+      <PageList ntb={ntb}/>
       <Ntbks />
-      
     </div>)
 }
 
