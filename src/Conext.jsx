@@ -17,13 +17,23 @@ const ntbContext = createContext({
 export function useAppContext() {
     return useContext(appContext);
 }
-
+export function useNtbContext() {
+    return useContext(ntbContext);
+}
 export default function ProvideAppContext({ children }) {
     const cntx = useProvideAppContext();
     return (
         <appContext.Provider value={cntx}>
             {children}
         </appContext.Provider>
+    );
+}
+export default function ProvideNtbContext({ children }) {
+    const sntb = useProvideNtbContext();
+    return (
+        <ntbContext.Provider value={sntb}>
+            {children}
+        </ntbContext.Provider>
     );
 }
 
@@ -45,9 +55,16 @@ function useProvideAppContext() {
         
     
     });
+    
+    return {
+        notebooks
+    };
+}
+
+function useProvideNtbContext() {
+    
     const [selectedNtb, setSelectedNtb] = useState();
     return {
-        notebooks,
         selectedNtb,
         setSelectedNtb
     };
